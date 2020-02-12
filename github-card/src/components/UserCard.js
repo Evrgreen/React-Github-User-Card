@@ -16,7 +16,9 @@ const UserCard = ({user}) =>{
         </div>
         <p className="followers">Followers: {user.followers}</p>
         <p className="following">Following: {user.following}</p>
-        <img className="chart" src={`http://ghchart.rshah.org/fff/user.login}`}/>   
+        <div className="chart">
+        <img  src={`http://ghchart.rshah.org/000/${user.login}`}/>   
+        </div>
         </div>
       
     )

@@ -39,9 +39,6 @@ class App extends React.Component {
   render(){
   return (
     <div className="app">
-      <div className="search">
-      <p>Hello</p>
-      </div>
       <UserCard user={this.state.user}/>
       {this.state.followers.length >0 ?
         this.state.followers.map(follower=>(
